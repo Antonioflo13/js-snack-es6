@@ -29,10 +29,8 @@ for (i=0; i < biciclette.length; i++) {
 }
 console.log(biciclettaLeggera);
 
-var {nome} = biciclettaLeggera;
-console.log(nome);
-var {peso} = biciclettaLeggera;
-console.log(peso);
+var {nome,peso} = biciclettaLeggera;
+console.log(nome,peso);
 var bici = document.getElementById("bicileggera");
 
 bici.innerHTML = `<li> ${nome}</li> <li> ${peso}</li> `;

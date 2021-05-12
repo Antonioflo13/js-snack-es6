@@ -9,7 +9,7 @@
 const randomNumber = (min, max) =>  Math.floor(Math.random() * (max - min + 1) ) + min;
 
 // VARIABILI
-var squadre = [
+const squadre = [
 
     squadra1 = {
         nome: "Fiorentina",
@@ -33,7 +33,7 @@ rapportoSquadraFalli = [];
 for (let i=0; i<squadre.length; i++) {
     squadre[i].punti = randomNumber(1,15);
     squadre[i].falli = randomNumber(1,20);
-    var {nome,falli} = squadre[i];
+    let {nome,falli} = squadre[i];
     rapportoSquadraFalli.push({nome,falli});
 }
 console.log(squadre);
