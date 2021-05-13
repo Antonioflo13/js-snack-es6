@@ -33,7 +33,7 @@ rapportoSquadraFalli = [];
 for (let i=0; i<squadre.length; i++) {
     squadre[i].punti = randomNumber(1,15);
     squadre[i].falli = randomNumber(1,20);
-    let {nome,falli} = squadre[i];
+    const {nome,falli} = squadre[i];
     rapportoSquadraFalli.push({nome,falli});
 }
 console.log(squadre);
